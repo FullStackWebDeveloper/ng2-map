@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular2 Npm Package Example</title>
+  <style>
+    ng2-map {
+      width: 60%;
+    }
+    .ls {
+      width: 30%;
+      float: right;
+    }
+    .ls li {
+      color: blue;
+      cursor: pointer;
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <my-app>Loading...</my-app>
+  <script>
+    document.write('<base href="' + document.location + '" />');
+
+    var script = document.createElement("script");
+    script.src = location.pathname.replace('index.html', '') + 'build/app.js';
+    (document.body).appendChild(script);
+  </script>
+</body>
+</html>
